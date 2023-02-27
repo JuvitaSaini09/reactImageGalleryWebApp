@@ -1,0 +1,53 @@
+.apiImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem 1rem;
+  margin-top: 1rem;
+}
+
+.apiImages li {
+  list-style-type: none;
+  height: 20rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.apiImage {
+  /* height: 20rem;
+  width: 20rem; */
+  cursor: pointer;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border-radius: 3px;
+}
+
+.apiImage:hover {
+  box-shadow: var(--primary-orange) 0px 1px 4px,
+    var(--primary-orange) 0px 0px 0px 3px;
+}
+
+.fa-thumbs-up {
+  color: var(--primary-orange);
+}
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.imageInfo {
+  padding: 5px 10px 0 10px;
+  color: var(--primary-orange);
+  font-weight: bold;
+  background-color: rgb(243, 237, 237);
+}
+
+.profileImage {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}

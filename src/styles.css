@@ -1,0 +1,107 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-orange: rgb(201, 64, 14);
+}
+
+h1 {
+  color: var(--primary-orange);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.searchBtn {
+  color: white;
+  background-color: var(--primary-orange);
+  border: none;
+  height: 2rem;
+  width: 7rem;
+  margin-left: 1rem;
+}
+.searchImageInput {
+  width: 20rem;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+.open-modal-bg-disable {
+  height: 100vh;
+  overflow-y: hidden;
+  padding-right: 15px; /* Avoid width reflow */
+  position: fixed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.popUpImageContainer {
+  position: absolute;
+  top: 2rem;
+  background-color: white;
+  height: auto;
+  width: 50rem;
+  left: 10rem;
+  background-color: rgb(238, 238, 238);
+}
+
+.popupImageParent {
+  position: relative;
+  width: 70%;
+  height: auto;
+  background-color: white;
+  left: 15%;
+  right: 15%;
+}
+.popUpImage {
+  width: 100%;
+}
+.flex-row-left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.imgDownloadLink {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  text-decoration: none;
+  color: white;
+  height: 1rem;
+  width: 7rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--primary-orange);
+}
+
+.fa-times {
+  position: absolute;
+  top: 10px;
+  right: 1rem;
+  color: grey;
+  font-size: 1.2rem;
+}
+
+.popUpImageDetails {
+  list-style-type: none;
+  display: flex column;
+  text-align: start;
+  color: grey;
+}
+.popUpImageDetails li {
+  margin-bottom: 10px;
+}
+
+.popUpImageDetails li a,
+.popUpImageDetails .fa-thumbs-up {
+  color: grey;
+}
+
+.popUpImageDetails li a:hover {
+  color: var(--primary-orange);
+}
